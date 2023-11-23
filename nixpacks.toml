@@ -1,0 +1,10 @@
+providers = ["python"]
+
+[phases.setup]
+nixPkgs = ["...", "tesseract"]
+
+[phases.build]
+cmds = ["echo building!", "pip install -r requirements.txt", "..."]
+
+[start]
+cmd = "gunicorn ocrapi.wsgi"
