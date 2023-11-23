@@ -4,4 +4,4 @@
 nixPkgs = ['...', tesseract’]
 
 [start]
-cmd = 'gunicorn helloworld.wsgi'
+cmd = 'gunicorn ocrapi.wsgi'
