@@ -2,3 +2,6 @@
 
 [phases.setup]
 nixPkgs = ['...', tesseract’]
+
+[start]
+cmd = 'gunicorn helloworld.wsgi'

@@ -1,2 +1,4 @@
 env/
 .DS_Store
+
+ocrapi/__pycache__
